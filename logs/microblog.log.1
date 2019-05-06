@@ -1,0 +1,125 @@
+2019-05-04 22:59:05,360 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-04 23:08:00,929 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-04 23:08:12,598 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-04 23:35:12,074 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-04 23:36:42,742 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-04 23:39:03,278 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-05 09:12:09,770 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-05 09:40:47,611 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-05 10:09:17,751 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-05 10:17:07,565 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-05 10:17:34,802 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-05 10:22:51,787 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-05 10:28:15,412 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:49
+2019-05-05 10:32:37,427 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52
+2019-05-05 10:38:00,625 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52
+2019-05-05 12:06:47,337 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52
+2019-05-05 12:07:18,672 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52
+2019-05-05 12:13:34,995 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52
+2019-05-05 12:53:16,198 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52
+2019-05-05 12:53:24,623 ERROR: Exception on / [GET] [in /home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py:1761
+Traceback (most recent call last):
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/yl238/projects/microblog/app/routes.py", line 45, in index
+    prev_url=prev_url)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/yl238/projects/microblog/app/templates/base.html", line 54, in template
+    {% block content %}{% endblock %}
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "/home/yl238/projects/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/yl238/projects/microblog/app/templates/base.html", line 54, in template
+    {% block content %}{% endblock %}
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/environment.py", line 543, in _generate
+    optimized=self.optimized)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/compiler.py", line 82, in generate
+    generator.visit(node)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/compiler.py", line 718, in visit_Template
+    self.fail('block %r defined twice' % block.name, block.lineno)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/jinja2/compiler.py", line 315, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2019-05-05 12:54:16,522 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52
+2019-05-05 13:04:44,424 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:55
+2019-05-05 16:12:50,902 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52]
+2019-05-05 16:13:06,409 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52]
+2019-05-05 16:16:32,608 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52]
+2019-05-05 16:16:55,036 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52]
+2019-05-05 16:17:02,648 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52]
+2019-05-05 16:18:34,341 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:52]
+2019-05-05 18:06:11,488 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:73]
+2019-05-05 18:06:23,050 ERROR: Exception on / [GET] [in /home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1811, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 2087, in preprocess_request
+    rv = func()
+  File "/home/yl238/projects/microblog/app/main/routes.py", line 19, in before_request
+    g.locale = str(get_locale())
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask_babel/__init__.py", line 257, in get_locale
+    rv = babel.locale_selector_func()
+  File "/home/yl238/projects/microblog/app/__init__.py", line 79, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+NameError: name 'app' is not defined
+2019-05-05 18:07:27,481 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:73]
+2019-05-05 18:07:30,819 ERROR: Exception on / [GET] [in /home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 1811, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask/app.py", line 2087, in preprocess_request
+    rv = func()
+  File "/home/yl238/projects/microblog/app/main/routes.py", line 19, in before_request
+    g.locale = str(get_locale())
+  File "/home/yl238/projects/microblog/.env/lib/python3.7/site-packages/flask_babel/__init__.py", line 257, in get_locale
+    rv = babel.locale_selector_func()
+  File "/home/yl238/projects/microblog/app/__init__.py", line 79, in get_locale
+    return request.accept_languages.best_match(current_app.config['LANGUAGES'])
+NameError: name 'current_app' is not defined
+2019-05-05 18:08:16,190 INFO: Microblog startup [in /home/yl238/projects/microblog/app/__init__.py:73]
